@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="mb-4">
+    <h1 class="display-5 fw-bold">Meus filmes</h1>
+    <p class="text-secondary">
+        Confira os filmes disponíveis no CineFast.
+    </p>
+</div>
+
+{% for movie in movies %}
+
+<article class="content-section movie-card p-4 mb-4">
+
+    <div class="d-flex align-items-start gap-4">
+
+        <!-- Imagem do filme -->
+        <img
+            class="movie-poster flex-shrink-0"
+            src="{{ url_for('static', path='movie_posters/default.png') }}"
+            alt="Pôster de {{ movie.title }}"
+            width="160"
+            height="230"
+            loading="lazy"
+        >
+
+        <!-- Informações do filme -->
+        <div class="flex-grow-1">
+
+            <!-- Título -->
+            <h2 class="mb-2">
+                <a
+                    class="article-title"
+                    href="{{ url_for('movie', movie_id=movie.id) }}"
+                >
+                    {{ movie.title }}
+                </a>
+            </h2>
+
+            <!-- Informações básicas -->
+            <div class="article-metadata mb-3">
+
+                <span class="me-3">
+                    🎬 {{ movie.genre }}
+                </span>
+
+                <span class="me-3">
+                    📅 {{ movie.year }}
+                </span>
+
+                <span>
+                    ⭐ {{ movie.rating }}
+                </span>
+
+            </div>
+
+            <!-- Descrição -->
+            <p class="article-content mb-4">
+                {{ movie.description }}
+            </p>
+
+            <!-- Botão -->
+            <a
+                href="{{ url_for('movie', movie_id=movie.id) }}"
+                class="btn btn-outline-light"
+            >
+                Ver detalhes
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+
+{% else %}
+
+<div class="content-section p-4 text-center">
+    <h2>Nenhum filme encontrado</h2>
+    <p class="text-secondary mb-0">
+        Ainda não existem filmes cadastrados.
+    </p>
+</div>
+
+{% endfor %}
+
+{% endblock content %}

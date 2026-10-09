@@ -1,0 +1,96 @@
+/* =========================
+   Geral
+   ========================= */
+
+body {
+    background-color: #081525;
+    color: #e6edf5;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* =========================
+   Navbar
+   ========================= */
+
+.cine-navbar {
+    background-color: #0b1f3a;
+    border-bottom: 1px solid #17365f;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    color: #b8c7d9 !important;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+
+/* =========================
+   Conteúdo
+   ========================= */
+
+.cine-main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+/* =========================
+   Cards
+   ========================= */
+
+.content-section {
+    background-color: #0d2138;
+    border: 1px solid #193858;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.article-title {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.article-title:hover {
+    color: #5da9e9;
+}
+
+.article-metadata {
+    color: #8fa6bd;
+}
+
+.article-content {
+    color: #c8d4e0;
+}
+
+
+/* =========================
+   Links
+   ========================= */
+
+a {
+    color: #5da9e9;
+}
+
+a:hover {
+    color: #8bc7f5;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.cine-footer {
+    background-color: #06111f;
+    color: #8296aa;
+    border-top: 1px solid #17365f;
+}

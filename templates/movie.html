@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="content-section p-4">
+
+    <h1>{{ movie.title }}</h1>
+
+    <div class="article-metadata mb-3">
+        <span class="me-3">🎬 {{ movie.genre }}</span>
+        <span class="me-3">📅 {{ movie.year }}</span>
+        <span>⭐ {{ movie.rating }}</span>
+    </div>
+
+    <p class="article-content">
+        {{ movie.description }}
+    </p>
+
+    <a href="{{ url_for('home') }}" class="btn btn-outline-light">
+        Voltar para filmes
+    </a>
+
+</div>
+
+{% endblock content %}
