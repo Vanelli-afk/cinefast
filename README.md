@@ -72,16 +72,14 @@ Cinefast/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/cinefast.git
+git clone https://github.com/Vanelli-afk/cinefast.git
 cd cinefast
 ```
-
-Replace `YOUR_USERNAME` with your GitHub username or use your repository's actual URL.
 
 ### Create a virtual environment
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 Activate it on Windows:
