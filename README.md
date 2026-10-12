@@ -2,6 +2,12 @@
 
 A movie catalog website built with FastAPI, Jinja2, Bootstrap, and Python.
 
+## 🚀 Live Demo
+
+[Test it Here!](https://cinefast.onrender.com)
+
+> Hosted on Render's free tier: the first load may take up to a minute while the service wakes up.
+
 ## 📖 About
 
 Cinefast is a web development project focused on backend development using **FastAPI** to handle application routes and serve dynamic movie pages.
